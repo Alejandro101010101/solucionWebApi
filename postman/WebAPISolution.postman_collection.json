@@ -1,0 +1,581 @@
+{
+  "info": {
+    "name": "WebAPISolution - Estudiantes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Estudiantes",
+      "item": [
+        {
+          "name": "Raíz",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "Listar estudiantes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener estudiante 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Crear Armando Cajas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Armando\",\n  \"apellidos\": \"Cajas\",\n  \"direccion\": \"Cuilapa, Santa Rosa\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Crear Juan Pérez",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Juan\",\n  \"apellidos\": \"Pérez\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Actualizar estudiante 1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"estudianteId\": 1,\n  \"nombres\": \"Armando\",\n  \"apellidos\": \"Cajas López\",\n  \"direccion\": \"Cuilapa, Santa Rosa\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar estudiante 2",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/estudiantes/2",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "estudiantes",
+                "2"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cursos",
+      "item": [
+        {
+          "name": "Listar cursos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/cursos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener curso 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/cursos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Crear curso",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/cursos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Programación I\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Actualizar curso 1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/cursos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cursoId\": 1,\n  \"nombre\": \"Programación II\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar curso 1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/cursos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Docentes",
+      "item": [
+        {
+          "name": "Listar docentes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/docentes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "docentes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener docente 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/docentes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "docentes",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Crear docente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/docentes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "docentes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Carlos\",\n  \"apellidos\": \"Méndez\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Actualizar docente 1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/docentes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "docentes",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"docenteId\": 1,\n  \"nombres\": \"Carlos\",\n  \"apellidos\": \"Méndez Ruiz\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar docente 1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/docentes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "docentes",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Asignaciones",
+      "item": [
+        {
+          "name": "Listar asignaciones",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/asignaciones",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "asignaciones"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener asignación 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/asignaciones/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "asignaciones",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Crear asignación",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/asignaciones",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "asignaciones"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"estudianteId\": 1,\n  \"cursoId\": 1,\n  \"docenteId\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Actualizar asignación 1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://localhost:44322/api/asignaciones/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "asignaciones",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"asignacionId\": 1,\n  \"estudianteId\": 2,\n  \"cursoId\": 1,\n  \"docenteId\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar asignación 1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:44322/api/asignaciones/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "44322",
+              "path": [
+                "api",
+                "asignaciones",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

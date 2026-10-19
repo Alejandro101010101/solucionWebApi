@@ -1,0 +1,103 @@
+@host = https://localhost:44322
+
+### Raíz: mensaje de prueba
+GET {{host}}/
+
+### Listar estudiantes
+GET {{host}}/api/estudiantes
+Accept: application/json
+
+### Obtener un estudiante por id
+GET {{host}}/api/estudiantes/1
+Accept: application/json
+
+### Crear estudiante (POST)
+POST {{host}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "nombres": "Armando",
+  "apellidos": "Cajas",
+  "direccion": "Cuilapa, Santa Rosa"
+}
+
+### Crear otro estudiante
+POST {{host}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "nombres": "Juan",
+  "apellidos": "Pérez"
+}
+
+### Actualizar estudiante (PUT) — el id de la URL debe coincidir con el del cuerpo
+PUT {{host}}/api/estudiantes/1
+Content-Type: application/json
+
+{
+  "estudianteId": 1,
+  "nombres": "Armando",
+  "apellidos": "Cajas López"
+}
+
+### Eliminar estudiante
+DELETE {{host}}/api/estudiantes/2
+
+############ CURSOS ############
+
+### Listar cursos
+GET {{host}}/api/cursos
+
+### Crear curso
+POST {{host}}/api/cursos
+Content-Type: application/json
+
+{
+  "nombre": "Programación I"
+}
+
+############ DOCENTES ############
+
+### Listar docentes
+GET {{host}}/api/docentes
+
+### Crear docente
+POST {{host}}/api/docentes
+Content-Type: application/json
+
+{
+  "nombres": "Carlos",
+  "apellidos": "Méndez"
+}
+
+############ ASIGNACIONES ############
+
+### Listar asignaciones (incluye estudiante, curso y docente)
+GET {{host}}/api/asignaciones
+
+### Obtener asignación por id
+GET {{host}}/api/asignaciones/1
+
+### Crear asignación (los ids deben existir)
+POST {{host}}/api/asignaciones
+Content-Type: application/json
+
+{
+  "estudianteId": 1,
+  "cursoId": 1,
+  "docenteId": 1
+}
+
+### Actualizar asignación
+PUT {{host}}/api/asignaciones/1
+Content-Type: application/json
+
+{
+  "asignacionId": 1,
+  "estudianteId": 2,
+  "cursoId": 1,
+  "docenteId": 1
+}
+
+### Eliminar asignación
+DELETE {{host}}/api/asignaciones/1
